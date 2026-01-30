@@ -23,7 +23,7 @@ services:
     volumes:
       - ./:/app:cached
   db:
-    image: postgres
+    image: postgres:15
     container_name: livraria_db
     environment:
       - POSTGRES_USER=postgres
@@ -34,6 +34,7 @@ services:
     volumes:
       - database:/var/lib/postgresql/data
 
+<<<<<<< HEAD
   unleash:
     build: ./unleash-docker/.
     ports:
@@ -72,3 +73,7 @@ services:
 
 volumes:
    database:
+=======
+volumes:
+  database:
+>>>>>>> aula2/feat/livros-por-autor
