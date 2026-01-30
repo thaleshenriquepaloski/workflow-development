@@ -61,9 +61,9 @@ class Autor {
     return resultado;
   }
 
-  static async pegaLivrosPorAutor(autorId) {
+  static async pegarLivroPorAutor(idAutor) {
     return db('livros')
-      .where({ autor_id: autorId });
+      .where({ autor_id: idAutor });
   }
 }
 
