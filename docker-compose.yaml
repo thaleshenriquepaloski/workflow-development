@@ -12,7 +12,6 @@ services:
       - ./:/app:cached
     depends_on:
       - db
-      - unleash
   test:
     build: .
     container_name: livraria_api_test
