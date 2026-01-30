@@ -53,9 +53,9 @@ describe('GET em /autores', () => {
       });
   });
   it('Deve retornar uma lista de livros', (done) => {
-    const autorId = 1;
+    const idAutor = 1;
     chai.request(app)
-      .get(`/autores/${autorId}/livros`)
+      .get(`/autores/${idAutor}/livros`)
       .set('Accept', 'application/json')
       .end((err, res) => {
         expect(res.status).to.equal(200);
